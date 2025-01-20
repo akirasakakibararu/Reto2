@@ -13,6 +13,11 @@ class RolSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        DB::table('roles')->insert([
+            ['rol_nombre' => 'god'],
+            ['rol_nombre' => 'estudiante'],
+            ['rol_nombre' => 'administrador'],
+            ['rol_nombre' => 'profesor']
+        ]);
     }
 }
